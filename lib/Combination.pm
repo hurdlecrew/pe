@@ -52,3 +52,23 @@ sub C
 
 1;
 
+__END__
+
+=head1 NAME
+
+Combination.pm - Do some combinatorics!
+
+=head1 SYNOPSIS
+
+    use Combination qw(C);
+    my $comb = C($n, $m);
+
+=head1 DESCRIPTION
+
+This module optionally exports the following subroutine(s):
+
+=head2 C($n, $m)
+
+This function performs a statistical combination C($n, $m), read "n choose m", or the number of ways to select m items from a set of n items.
+
+=cut
