@@ -87,11 +87,10 @@ Returns true if the given numeric argument is decreasing; false otherwise.  Numb
 
 Determines if a given numerical input is either decreasing, bouncy, or increasing and returns either -1, 0, or 1 respectively (analogous to the core I<cmp> operator.  Numers that consist entirely of a single repeated digit, such as 55555, in this case are considered to be increasing, thus causing bouncy() to return 1.  This is configurable by setting the $Bouncy::REPEATER variable to the desired return value.
 
+=head1 SEE ALSO
+
+Project Euler, specifically problem number 112: http://projecteuler.net/problem=112
+
 =cut
 
 
-Clearly there cannot be any bouncy numbers below one-hundred, but just over half of the numbers below one-thousand (525) are bouncy. In fact, the least number for which the proportion of bouncy numbers first reaches 50% is 538.
-
-Surprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to 90%.
-
-Find the least number for which the proportion of bouncy numbers is exactly 99%.
