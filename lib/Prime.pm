@@ -4,9 +4,9 @@ use strict;
 use warnings;
 use base qw(Exporter);
 
-our @EXPORT_OK = qw(prime);
+our @EXPORT_OK = qw(&prime @PRIMES);
 
-my @PRIMES = ();
+our @PRIMES = ();
 {
 	local $/ = undef;
 	my $list = readline(*Prime::DATA);
