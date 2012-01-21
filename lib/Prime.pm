@@ -6,7 +6,15 @@ use base qw(Exporter);
 
 our @EXPORT_OK = qw(prime);
 
-my @PRIMES = (2,3,5,7);
+my @PRIMES = ();
+{
+	local $/ = undef;
+	my $list = readline(*Prime::DATA);
+	$list =~ s/\n//g;
+	@PRIMES = split /,/, $list;
+	undef $list;
+}
+
 
 sub prime
 {
