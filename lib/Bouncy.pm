@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw(Exporter);
 
-our @EXPORT_OK = qw(bouncy);
+our @EXPORT_OK = qw(bouncy decreasing increasing);
 
 our $REPEATER = 1;
 
@@ -15,7 +15,7 @@ sub increasing
    my @num = split //, shift;
    while (@num > 1)  {
       return 0 if $num[0] > $num[1];
-      shift;
+      shift @num;
    }
    return 1;
 }
